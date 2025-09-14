@@ -1,0 +1,53 @@
+# DVAG Kontaktformular - Git Ignore File
+
+# Betriebssystem-spezifische Dateien
+.DS_Store
+Thumbs.db
+
+# Editor/IDE Dateien
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Temporäre Dateien
+*.tmp
+*.log
+
+# Node.js (falls später hinzugefügt)
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Firebase Cache (falls vorhanden)
+.firebase/
+firebase-debug.log
+
+# Backup-Dateien
+*.bak
+*.backup
+
+# Lokale Umgebungsvariablen (falls später verwendet)
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Build-Ordner (falls später verwendet)
+dist/
+build/
+
+# Sicherheitsrelevante Dateien (falls vorhanden)
+config/secrets.js
+config/private.js
+
+# Test-Dateien
+test-files/
+*.test.js
+
+# Diverse
+*.zip
+*.tar.gz
