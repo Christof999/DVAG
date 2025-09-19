@@ -65,7 +65,7 @@ header::before {
     right: 0;
     bottom: 0;
     background: linear-gradient(45deg, transparent 40%, rgba(255, 255, 255, 0.1) 50%, transparent 60%);
-    animation: shimmer 3s ease-in-out infinite;
+    animation: shimmer 1.5s ease-in-out infinite;
 }
 
 header::after {
@@ -116,8 +116,8 @@ header::after {
     border: 2px solid rgba(212, 165, 116, 0.3);
     box-shadow: 0 15px 40px rgba(212, 165, 116, 0.2);
     max-width: 600px;
-    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-    animation: slideInRight 0.8s ease-out;
+    transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+    animation: slideInRight 0.4s ease-out;
     position: relative;
     overflow: hidden;
 }
@@ -130,7 +130,7 @@ header::after {
     width: 100%;
     height: 100%;
     background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.4), transparent);
-    transition: left 0.5s;
+    transition: left 0.3s;
 }
 
 .portrait-card:hover {
@@ -146,7 +146,7 @@ header::after {
 .portrait-image {
     margin-right: 30px;
     flex-shrink: 0;
-    animation: fadeIn 1s ease-out 0.3s both;
+    animation: fadeIn 0.5s ease-out 0.15s both;
 }
 
 .portrait-image img {
@@ -156,7 +156,7 @@ header::after {
     border: 4px solid var(--dvag-gold);
     object-fit: cover;
     box-shadow: 0 8px 25px var(--shadow-medium);
-    transition: transform 0.3s ease;
+    transition: transform 0.15s ease;
 }
 
 .portrait-card:hover .portrait-image img {
@@ -164,7 +164,7 @@ header::after {
 }
 
 .portrait-info {
-    animation: slideInUp 0.8s ease-out 0.5s both;
+    animation: slideInUp 0.4s ease-out 0.25s both;
 }
 
 .portrait-info h2 {
@@ -197,7 +197,7 @@ main {
 .intro-section {
     text-align: center;
     margin-bottom: 60px;
-    animation: fadeInUp 1s ease-out 0.7s both;
+    animation: fadeInUp 0.5s ease-out 0.35s both;
 }
 
 .intro-section h1 {
@@ -207,7 +207,7 @@ main {
     margin-bottom: 30px;
     position: relative;
     letter-spacing: -0.5px;
-    animation: typewriter 2s steps(20) 1.2s both;
+    animation: smoothSlideIn 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.6s both;
 }
 
 .intro-section h1::after {
@@ -220,7 +220,7 @@ main {
     height: 4px;
     background: linear-gradient(90deg, var(--dvag-gold), var(--dvag-gold-dark));
     border-radius: 2px;
-    animation: expandWidth 0.8s ease-out 2s both;
+    animation: expandWidth 0.4s ease-out 1s both;
 }
 
 .intro-section p {
@@ -230,7 +230,7 @@ main {
     margin: 0 auto;
     line-height: 1.8;
     font-weight: 400;
-    animation: fadeIn 1s ease-out 1.5s both;
+    animation: fadeIn 0.5s ease-out 0.75s both;
 }
 
 /* Contact Form */
@@ -246,7 +246,7 @@ main {
     box-shadow: 0 25px 50px var(--shadow-dark);
     border: 2px solid rgba(212, 165, 116, 0.2);
     position: relative;
-    animation: slideInUp 0.8s ease-out 1.8s both;
+    animation: slideInUp 0.4s ease-out 0.9s both;
     overflow: hidden;
 }
 
@@ -269,7 +269,7 @@ main {
     width: 100%;
     height: 100%;
     background: radial-gradient(circle, rgba(212, 165, 116, 0.05) 0%, transparent 70%);
-    animation: rotate 20s linear infinite;
+    animation: rotate 10s linear infinite;
 }
 
 .contact-form {
@@ -281,14 +281,14 @@ main {
 
 .form-group {
     margin-bottom: 32px;
-    animation: slideInLeft 0.6s ease-out both;
+    animation: slideInLeft 0.3s ease-out both;
 }
 
-.form-group:nth-child(1) { animation-delay: 2s; }
-.form-group:nth-child(2) { animation-delay: 2.1s; }
-.form-group:nth-child(3) { animation-delay: 2.2s; }
-.form-group:nth-child(4) { animation-delay: 2.3s; }
-.form-group:nth-child(5) { animation-delay: 2.4s; }
+.form-group:nth-child(1) { animation-delay: 1s; }
+.form-group:nth-child(2) { animation-delay: 1.05s; }
+.form-group:nth-child(3) { animation-delay: 1.1s; }
+.form-group:nth-child(4) { animation-delay: 1.15s; }
+.form-group:nth-child(5) { animation-delay: 1.2s; }
 
 .form-group label {
     display: block;
@@ -296,7 +296,7 @@ main {
     color: var(--dvag-gray-dark);
     margin-bottom: 12px;
     font-size: 17px;
-    transition: color 0.3s ease;
+    transition: color 0.15s ease;
 }
 
 .form-group input,
@@ -307,7 +307,7 @@ main {
     border-radius: 15px;
     font-size: 16px;
     font-family: inherit;
-    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
     background-color: var(--dvag-white);
     color: var(--dvag-gray-dark);
     position: relative;
@@ -363,13 +363,13 @@ main {
     font-weight: 600;
     border-radius: 18px;
     cursor: pointer;
-    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
     position: relative;
     overflow: hidden;
     box-shadow: 0 12px 30px var(--shadow-medium);
     text-transform: none;
     letter-spacing: 0.5px;
-    animation: pulse 2s infinite 3s;
+    animation: pulse 1s infinite 1.5s;
 }
 
 .submit-btn::before {
@@ -380,7 +380,7 @@ main {
     width: 100%;
     height: 100%;
     background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
-    transition: left 0.5s;
+    transition: left 0.3s;
 }
 
 .submit-btn:hover {
@@ -417,7 +417,7 @@ main {
     box-shadow: 0 25px 60px var(--shadow-dark);
     position: relative;
     overflow: hidden;
-    animation: successSlideIn 0.8s cubic-bezier(0.4, 0, 0.2, 1) both;
+    animation: successSlideIn 0.4s cubic-bezier(0.4, 0, 0.2, 1) both;
 }
 
 .success-message::before {
@@ -439,7 +439,7 @@ main {
     width: 200%;
     height: 200%;
     background: radial-gradient(circle, rgba(16, 185, 129, 0.05) 0%, transparent 70%);
-    animation: rotate 15s linear infinite;
+    animation: rotate 8s linear infinite;
 }
 
 .success-message .success-icon {
@@ -454,7 +454,7 @@ main {
     font-size: 40px;
     color: white;
     box-shadow: 0 10px 30px rgba(16, 185, 129, 0.3);
-    animation: bounceIn 0.8s ease-out 0.3s both;
+    animation: bounceIn 0.4s ease-out 0.15s both;
     position: relative;
     z-index: 2;
 }
@@ -465,7 +465,7 @@ main {
     color: var(--dvag-gray-dark);
     margin-bottom: 20px;
     letter-spacing: -0.5px;
-    animation: fadeInUp 0.6s ease-out 0.5s both;
+    animation: fadeInUp 0.3s ease-out 0.25s both;
     position: relative;
     z-index: 2;
 }
@@ -478,7 +478,7 @@ main {
     max-width: 450px;
     margin-left: auto;
     margin-right: auto;
-    animation: fadeIn 0.6s ease-out 0.7s both;
+    animation: fadeIn 0.3s ease-out 0.35s both;
     position: relative;
     z-index: 2;
 }
@@ -489,7 +489,7 @@ main {
     border-radius: 18px;
     border: 1px solid rgba(212, 165, 116, 0.4);
     margin-top: 30px;
-    animation: slideInUp 0.6s ease-out 0.9s both;
+    animation: slideInUp 0.3s ease-out 0.45s both;
     position: relative;
     z-index: 2;
 }
@@ -534,11 +534,11 @@ footer p {
     margin-bottom: 10px;
     font-size: 16px;
     font-weight: 400;
-    animation: fadeInUp 0.6s ease-out both;
+    animation: fadeInUp 0.3s ease-out both;
 }
 
-footer p:nth-child(1) { animation-delay: 0.1s; }
-footer p:nth-child(2) { animation-delay: 0.2s; }
+footer p:nth-child(1) { animation-delay: 0.05s; }
+footer p:nth-child(2) { animation-delay: 0.1s; }
 
 footer p:last-child {
     color: rgba(255, 255, 255, 0.7);
@@ -590,7 +590,7 @@ footer p:last-child {
         max-width: none;
         margin: 0 20px;
         padding: 30px;
-        animation-delay: 0.3s;
+        animation-delay: 0.15s;
     }
     
     .portrait-image {
@@ -827,6 +827,17 @@ footer p:last-child {
     }
     to {
         width: 100%;
+    }
+}
+
+@keyframes smoothSlideIn {
+    from {
+        opacity: 0;
+        transform: translateY(30px) scale(0.95);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
     }
 }
 
